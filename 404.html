@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Manu's Blog</title>
+    </head>
+    <body>
+        Redirecting ... this page has been moved <a id="redirectedUrl" href="">here</a>
+        <script>
+            (function() {
+                var url =  window.location.href.replace("://manuskc.com", "://www.manuskc.com");
+                var link = document.getElementById("redirectedUrl");
+                link.setAttribute("href", url);
+                if(window.location.href !== url) {
+                    window.location.href = url;
+                }
+            })();
+        </script>
+    </body>
+</html>
